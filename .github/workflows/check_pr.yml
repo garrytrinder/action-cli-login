@@ -83,9 +83,9 @@ jobs:
       - name: Restore dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
-      - name: Test with coverage
-        run: npm test
       - name: Test without coverage
+        run: npm test
+      - name: Test with coverage
         run: npm run test:cov
       - uses: actions/upload-artifact@v2
         with:
