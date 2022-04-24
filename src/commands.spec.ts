@@ -16,13 +16,13 @@ describe('commands', () => {
         //     assert.equal(actual, expected);
         // });
 
-        it('throws error if ADMIN_USERNAME not passed', () => {
-            const options: Options = {
-                ADMIN_USERNAME: '',
-                ADMIN_PASSWORD: 'adminPassword'
-            };
-            assert.throws(() => getLoginCommand(options), Error, 'ADMIN_USERNAME is required');
-        });
+        // it('throws error if ADMIN_USERNAME not passed', () => {
+        //     const options: Options = {
+        //         ADMIN_USERNAME: '',
+        //         ADMIN_PASSWORD: 'adminPassword'
+        //     };
+        //     assert.throws(() => getLoginCommand(options), Error, 'ADMIN_USERNAME is required');
+        // });
 
         it('throws error if ADMIN_PASSWORD not passed', () => {
             const options: Options = {
